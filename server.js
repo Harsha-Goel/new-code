@@ -71,8 +71,8 @@ io.on('connection', (socket) =>{
 })
 
 
-const PORT =process.env.REACT_APP_BACKEND_URL || 5000;
-server.listen(PORT, ()=> console.log(`Listening to port  ${PORT}`));
+ const port =process.env.PORT || 5000;
+server.listen(port, ()=> console.log(`Listening to port  ${port}`));
 
 
 
